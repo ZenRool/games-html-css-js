@@ -27,7 +27,8 @@ main {
     height: calc(100% / 3);
     width: calc(100% / 3);
     border: 2px solid black;
-
+    position: relative;
+    font-size: 100px;
 }
 .reset {
     margin-left: 4rem;
@@ -48,4 +49,18 @@ main {
 }
 .reset button:active {
     background-color: #EEFFFF;
+}
+.x::after {
+    content: "X";
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+}
+.o::after {
+    content: "O";
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
 }
